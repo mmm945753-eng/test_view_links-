@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الصفحة 1</title>
+</head>
+<body>
+  <h1>الصفحة 1</h1>
+
+  <!-- رابط يفتح الصفحة 2 في تبويبة جديدة -->
+  <p>
+    <a href="p2.html" target="_blank" rel="noopener noreferrer">افتح الصفحة 2 في تبويبة جديدة</a>
+  </p>
+
+  <!-- زر يفتح الصفحة 2 في تبويبة جديدة باستخدام JavaScript -->
+  <p>
+    <button id="openPage2">افتح الصفحة 2 (زر)</button>
+  </p>
+
+  <script>
+    document.getElementById('openPage2').addEventListener('click', function () {
+      // يفتح page2.html في تبويبة جديدة وآمنة
+      window.open('p2.html', '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
